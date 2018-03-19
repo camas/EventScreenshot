@@ -1,0 +1,5 @@
+## Interface: 70300
+## Title: EventScreenshot
+## Author: Camas
+## Version: 0.1
+## Notes: Takes screenshots of various configurable events during play.
