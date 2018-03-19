@@ -2,7 +2,7 @@ EventScreenshot = LibStub("AceAddon-3.0"):NewAddon("EventScreenshot", "AceConsol
 
 function EventScreenshot:OnInitialize()
 	self:RegisterEvent("ACHIEVEMENT_EARNED")
-	self:Print("EventScreenshot enabled.")
+	self:Print("enabled.")
 end
 
 function EventScreenshot:ACHIEVEMENT_EARNED(achvId)
