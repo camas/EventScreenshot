@@ -3,3 +3,7 @@
 ## Author: Camas
 ## Version: 0.1
 ## Notes: Takes screenshots of various configurable events during play.
+
+embeds.xml
+
+EventScreenshot.lua
