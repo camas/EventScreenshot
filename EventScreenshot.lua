@@ -5,8 +5,8 @@ function EventScreenshot:OnInitialize()
 	self:Print("enabled.")
 end
 
-function EventScreenshot:ACHIEVEMENT_EARNED(achvId)
-	local achvName = select(2, GetAchievementInfo(achvId))
+function EventScreenshot:ACHIEVEMENT_EARNED(event, achvId)
+	local _, name = GetAchievementInfo(achvId)
 	self:TakeScreenshot("Achievement: " .. name)
 end
 
