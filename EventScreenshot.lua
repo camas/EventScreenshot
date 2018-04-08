@@ -4,7 +4,7 @@ local ACHIEVEMENT_DELAY = 1.2
 local PRINT_DELAY = 0.2
 
 function EventScreenshot:OnInitialize()
-	-- Achievement event delayed until after the last one is received
+	-- Achievement event bucketed so only one screenshot is taken for multiple achievements at the same time
 	self:RegisterBucketEvent({"ACHIEVEMENT_EARNED"}, ACHIEVEMENT_DELAY, "AchievementEarned")
 	self:Print("enabled.")
 end
@@ -25,8 +25,8 @@ function EventScreenshot:AchievementEarned(achvIds)
 end
 
 --- Takes a screenshot and prints a message to the console
--- @param message The message to prints
--- @param[opt=0] delay The delay before taking the screenshot.
+-- @param message The message to print
+-- @param[opt=0] delay The delay in seconds before taking the screenshot.
 function EventScreenshot:TakeScreenshot(message, delay)
 	delay = delay or 0
 	Screenshot()
