@@ -34,15 +34,15 @@ function EventScreenshot:AchievementEarned(achvIds)
 	if totalCount == 1 then
 		local key, value = next(achvIds, nil)
 		local _, achvName = GetAchievementInfo(key)
-		L.TakeScreenshot("Achievement: " .. achvName .. ".")
+		self:TakeScreenshot("Achievement: " .. achvName .. ".")
 	else
-		L.TakeScreenshot(totalCount .. " achievements.")
+		self:.TakeScreenshot(totalCount .. " achievements.")
 	end
 end
 
 --- Takes a screenshot and prints a message to the console
 -- @param message The message to print
-function L.TakeScreenshot(message)
+function EventScreenshot.TakeScreenshot(message)
 	Screenshot()
 	-- Delayed so doesn't show up in screenshot
 	self:DelayedPrint("Took screenshot for " .. message, PRINT_DELAY)
