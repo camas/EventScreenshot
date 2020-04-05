@@ -81,8 +81,7 @@ JPEG, which has variable compression, meaning lower file sizes but lower quality
 
 By default WoW uses JPEG with a quality of 3.
     
-Full source (10's of lines of code!!) available on GitHub @ https://github.com/camas/EventScreenshot
-Feedback welcome.]],
+Souce code available at https://github.com/camas/EventScreenshot]],
                 },
             },
         },
