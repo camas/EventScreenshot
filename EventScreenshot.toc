@@ -1,7 +1,7 @@
 ## Interface: 90001
 ## Title: EventScreenshot
 ## Author: Camas
-## Version: 0.2.1
+## Version: 0.2.2
 ## Notes: Takes screenshots of your achievements!
 
 embeds.xml
