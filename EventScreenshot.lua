@@ -15,7 +15,7 @@ function EventScreenshot:OnInitialize()
 	-- https://www.curseforge.com/wow/addons/immersion
 	LibStub("AceConfig-3.0"):RegisterOptionsTable(EV_ADDON_NAME, L.optionsTable)
 	L.configGUI = LibStub("AceConfigDialog-3.0"):AddToBlizOptions(_)
-	local logo = CreateFrame('Frame', nil, L.configGUI)
+	local logo = CreateFrame('Frame', nil, L.configGUI, "BackdropTemplate")
 	logo:SetFrameLevel(4)
 	logo:SetSize(64, 64)
 	logo:SetPoint("TopRight", 4, 24)
