@@ -1,4 +1,4 @@
-## Interface: 80300
+## Interface: 90001
 ## Title: EventScreenshot
 ## Author: Camas
 ## Version: 0.2.1
